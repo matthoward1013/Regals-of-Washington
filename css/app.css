@@ -1,0 +1,137 @@
+::-webkit-scrollbar {
+    width: 0px;
+    background: transparent;
+}
+
+html, body { 
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-y: hidden;
+    font-family: Georgia, sans-serif;
+}
+
+a {
+    target-name: new;
+    target-new: tab;
+    text-decoration: none;
+    cursor: pointer;
+}
+#left_panel {
+    margin: 0px 0px 0px 0px;
+    max-width: 500px;
+    width: 100%;
+    position: relative;
+}
+
+#map { 
+    bottom: 0px;
+    height: 100%;
+    left: 0px;
+    position: absolute;
+    right: 0px;
+}
+
+#error {
+    position: fixed;
+    top 350px;
+    left: 5%;
+    width: 20%;
+}
+
+.search-box {
+    height: 40px;
+    border: 2px solid #CECECE;
+    box-shadow: 5px 2px 10px 0 rgba(0, 0, 128,  0.5);
+    margin: 0px 0px 0px 0px;
+    max-width: 500px;
+    width: 100%;
+}
+
+.search-box input {
+    display: inline-block;
+    font-size: 16px;
+    font-family: Georgia, sans-serif;
+    width: 75%;
+    height: 100%;
+    margin-top: 0px;
+}
+.search-button {
+    width: 25%;
+    background-color: darkblue;
+    height: 100%;
+    float: right;
+    cursor: pointer;
+}
+
+.search-button img {
+    width: 28%;
+    float: middle;
+}
+
+.empty-list {
+    text-align: center;
+}
+
+.theater-list {
+    max-height: 80%;
+    overflow-y: scroll;
+    box-shadow: 5px 2px 10px 0 rgba(0, 0, 128,  0.5);
+}
+
+.theater-list ul {
+    overflow-y: scroll;
+    list-style-type: none;
+    padding-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.theater-li {
+    font-family: Georgia, sans-serif;
+    padding: 20px 15px 15px 15px;
+    background-color: darkblue;
+    border: 1px solid;
+    border-color: aqua;
+}
+
+.theater-li:hover {
+    background-color: darkcyan;
+    cursor: pointer;
+    color: black;
+}
+
+.theater-li p {
+    margin: 5px 0 5px;
+    color: lightgrey;
+    font-size: 12px;
+}
+.theater-li strong {
+    font-size: 16px;
+    color: white;
+    margin: 5px 0 5px;
+}
+.ticket-button {
+    color: black;
+    background-color: aqua;
+    width 50px;
+    height: 25px;
+    cursor: pointer;
+}
+.infoWindow {
+    text-align: center;
+}
+#arrow {
+    height: 45px;
+    width: 50px;
+}
+#arrow-button {
+    background-color: aqua;
+    max-width: 50px;
+    opacity: 0.9;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    cursor: pointer;
+    margin-left: 45%;
+}
+

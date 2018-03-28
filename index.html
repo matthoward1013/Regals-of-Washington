@@ -1,0 +1,38 @@
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/app.css">
+        <title>Regal Cinemas in WA</title>
+    </head>
+    <body>
+        <div id="map"></div>
+        <div id="left_panel">
+            <div class="search-box">
+                <input type="search" placeholder="Search Regals..." id="theater-search" data-bind="textInput: input, event: {keyup: filter}"/><button class="search-button" data-bind=""><img src="img/search-icon.png"></button>
+            </div>
+            <div class="theater-list">
+                <ul data-bind="foreach: visible">
+                    <li class="theater-li" data-bind="visible: visible, click: $parent.showInfo">
+                        <strong data-bind="text: title"></strong>
+                        <p data-bind="text: streetAddress"></p>
+                        <p data-bind="text: cityStateZip"></p>
+                    </li>
+                </ul>
+            </div>
+            <div id="arrow-button">
+                <img id="arrow" src="img/up-arrow.png" alt="Up" data-bind="click: arrowUtility">
+            </div>
+        </div>    
+        
+        
+        
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+        <script src="js/lib/knockout-3.4.2.js"></script>
+        <script src="js/theaters.js"></script>
+        <script src="js/app.js"></script>
+        <script async defer
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA8D_Pui7ocLcOS5zIiEMhG9iiHIJuI_-E&v=3&callback=initMap" onerror="errorHandling()">
+        </script>   
+    </body>
+</html>
